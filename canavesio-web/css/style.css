@@ -1,0 +1,293 @@
+/*Presets*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+
+h1 {
+  padding: 3%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: medium;
+}
+
+body {
+  background-color: gray;
+}
+
+.boton1, .boton3, .boton2 {
+  width: 20%;
+  height: 10%;
+  background-color: orangered;
+}
+.boton1:hover, .boton3:hover, .boton2:hover {
+  border: 1px inset #000;
+}
+
+.boton2 {
+  background-color: blue;
+}
+
+.boton3 {
+  background-color: #fff;
+}
+
+.gridBody {
+  display: grid;
+  grid-template-areas: "navBar" "head" "card" "photo" "map" "contact" "feet";
+  grid-template-rows: 0.25fr 0.25fr 2fr auto 2fr auto 0.5fr;
+}
+
+header {
+  grid-area: head;
+  width: 100%;
+  margin-top: 0.5vh;
+  background-color: #fff;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeLogo {
+  width: 20%;
+}
+
+.flexNav {
+  grid-area: navBar;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanIndex {
+  color: blue;
+  background-color: rgba(230, 230, 230, 0.082);
+  border-radius: 20px;
+  border: inset black 2px;
+  font-size: medium;
+  padding: 3%;
+  margin: 5%;
+}
+.spanIndex:hover {
+  color: #fff;
+  animation-name: color;
+  animation-duration: 1s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+a:hover {
+  animation-name: color;
+  animation-duration: 1s;
+}
+
+.flexSpan {
+  width: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.smallLogo {
+  display: none;
+}
+
+section#cardS {
+  width: 100%;
+  margin-top: 0.5vh;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.pCard {
+  margin: 3%;
+  pad: 3%;
+}
+
+.flexCard {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #C4C4C4;
+}
+.flexCard:hover {
+  box-shadow: 5px 5px 5px 5px rgb(51, 49, 49);
+}
+
+.cardPhoto {
+  width: 80%;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 20px;
+}
+
+.cardText {
+  width: 80%;
+  margin: 5vh;
+  padding: 5vh;
+}
+
+.t1 {
+  text-align: center;
+}
+
+/*Map*/
+section#map {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5vh;
+  grid-area: map;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.textMap {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.t3 {
+  font-size: 3rem;
+  margin: 10%;
+  padding: 3%;
+}
+
+.p3 {
+  margin: 10%;
+  font-size: large;
+}
+
+.mapIframe {
+  width: 50%;
+  height: 75%;
+}
+
+.iframe {
+  width: 70%;
+  height: 75%;
+  padding: 10%;
+  margin: 5%;
+  border-radius: 20px;
+}
+
+/*contact*/
+section#contact {
+  margin-top: 0.5vh;
+  width: 100%;
+  grid-area: contact;
+  background-image: url(../sources/gallery/planta.png);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bContact {
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: 50%;
+  text-decoration: double;
+  font-size: 2rem;
+}
+.bContact:hover {
+  border: 2px solid #000;
+  background-color: black;
+}
+
+.bName {
+  text-align: center;
+  color: #fff;
+}
+
+/*Gallery Index*/
+section#photos {
+  width: 100%;
+  margin-top: 0.5vh;
+  grid-area: photo;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #D9C7BB;
+  justify-content: center;
+}
+
+.galleryIndex {
+  width: 20%;
+  padding: 2vh;
+  margin: 3vh;
+}
+.galleryIndex:hover {
+  filter: opacity(60%);
+}
+
+/*Footer*/
+.footerFlex {
+  grid-area: feet;
+  margin-top: 0.5vh;
+  background-color: #D9C7BB;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo {
+  width: 25%;
+  margin-left: 10%;
+  padding: 5%;
+}
+
+.logoF {
+  width: 50%;
+}
+
+.linksF {
+  width: 50%;
+  text-decoration: underline 1px;
+}
+
+.footerL {
+  padding: 3%;
+  margin: 5%;
+}
+
+@keyframes color {
+  15% {
+    color: orangered;
+  }
+  75% {
+    color: blue;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
